@@ -81,7 +81,7 @@ function keyPressed() {
 		
 		// Rekognition searchFaces
 		var params = {
-		  CollectionId: 'veillance', /* required */
+		  CollectionId: 'surveillance', /* required */
 		  Image: { /* required */
 			Bytes: ab
 		  },
