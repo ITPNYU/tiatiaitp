@@ -1,0 +1,24 @@
+{
+  "name": "tiatiaitp",
+  "version": "1.0.0",
+  "description": "______________                                           /  _/_  __/ __ \\                                          / /  / / / /_/ /                                        _/ /  / / / ____/                                        /_______/ /_/     ____                       / ___/__  ________   _____  (_) / /___ _____  ________    \\__ \\/ / / / ___/ | / / _ \\/ / / / __ `/ __ \\/ ___/ _ \\  ___/ / /_/ / /   | |/ /  __/ / / / /_/ / / / / /__/  __/ /________,_/_/    |___/\\_____/_/_/\\__,_/_/ /_/\\___/\\___/    / ___/____  _____(_)__  / /___  __                        \\__ \\/ __ \\/ ___/ / _ \\/ __/ / / /                       ___/ / /_/ / /__/ /  __/ /_/ /_/ /                       /____/\\____/\\___/_/\\___/\\__/\\__, /                                                   /____/",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ITPNYU/tiatiaitp.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ITPNYU/tiatiaitp/issues"
+  },
+  "homepage": "https://github.com/ITPNYU/tiatiaitp#readme",
+  "dependencies": {
+    "aws-sdk": "^2.636.0",
+    "mjpeg-proxy": "^0.2.0"
+  }
+}

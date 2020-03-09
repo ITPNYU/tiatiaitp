@@ -1,15 +1,17 @@
 var fs = require('fs');
 
+let credentials = require('./keys.js');
+
 // Don't forget to install with NPM
 var AWS = require('aws-sdk');
 
 // Create a Rekognition
 // Replace accessKeyId and secretAccessKey with your values
-var rekognition = new AWS.Rekognition({apiVersion: '2016-06-27',  "accessKeyId": "YOUR ACCESS KEY ID", "secretAccessKey": "YOUR SECRET ACCESS KEY ID",, "region": "us-east-1"});
+var rekognition = new AWS.Rekognition({apiVersion: '2016-06-27',  "accessKeyId": credentials.ACCESS_KEY_ID, "secretAccessKey": credentials.SECRET_ACCESS_KEY, "region": "us-east-1"});
 
 // Have to proxy the stream from the camera for p5.js
 //https://github.com/legege/node-mjpeg-proxy
-var MjpegProxy = require('mjpeg-proxy').MjpegProxy;
+// var MjpegProxy = require('mjpeg-proxy').MjpegProxy;
 
 var express = require('express')
 var app = express()
@@ -29,7 +31,7 @@ app.get('/', function (req, res) {
 });
 
 // Proxy the mjpeg stream
-app.get('/stream', new MjpegProxy(CAMERA_URL).proxyRequest);
+// app.get('/stream', new MjpegProxy(CAMERA_URL).proxyRequest);
 
 // Just an example showing how to submit an image from node
 app.get('/test', function (req, res) {

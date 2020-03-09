@@ -1,0 +1,4 @@
+module.exports =  {
+    ACCESS_KEY_ID: "YOUR_ACCESS_KEY_ID",
+    SECRET_ACCESS_KEY: "YOUR_SECRET_ACCESS_KEY"
+};
